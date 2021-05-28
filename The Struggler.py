@@ -10,7 +10,7 @@ import json
 GRID_SIZE = 64
 WIDTH = 25 * GRID_SIZE
 HEIGHT = 14 * GRID_SIZE
-TITLE = "Game Title"
+TITLE = "The Struggler"
 FPS = 60
 
 
@@ -185,7 +185,7 @@ class Hero(AnimatedEntity):
     
     def __init__(self, x, y, images):
         super().__init__(x, y, images)
-        self.rect.bottom = y * GRID_SIZE + GRID_SIZE // 2 
+        
         
 
         self.speed = 5
@@ -331,8 +331,14 @@ class Hero(AnimatedEntity):
                 self.images = hero_idle_imgs_lt
             else:
                 self.images = hero_walk_imgs_lt
-            
-            
+
+
+        left = self.rect.left
+        bottom = self.rect.bottom
+        self.rect = self.image.get_rect()
+        self.rect.left = left
+        self.rect.bottom = bottom 
+        
     def update(self):
         self.apply_gravity()
         
