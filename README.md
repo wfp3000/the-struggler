@@ -1,4 +1,4 @@
-# the-struggler
+
 
 ## Goal
 Get the hero the the bonfire while avoiding monsters. clear all three levels to win the game.
