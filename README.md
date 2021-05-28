@@ -8,6 +8,6 @@ Use the arrows to walk and space to jump.
 
 ## Screenshots 
 
-![Startgame].(https://raw.githubusercontent.com/wfp3000/the-struggler/main/screenshots/startgame.PNG)
+![Startgame](https://raw.githubusercontent.com/wfp3000/the-struggler/main/screenshots/startgame.PNG)
 
-![Ingame].(https://raw.githubusercontent.com/wfp3000/the-struggler/main/screenshots/ingame.PNG)
+![Ingame](https://raw.githubusercontent.com/wfp3000/the-struggler/main/screenshots/ingame.PNG)
