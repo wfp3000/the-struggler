@@ -241,9 +241,9 @@ class Hero(AnimatedEntity):
         hits = pygame.sprite.spritecollide(self, platforms, False)
 
         for hit in hits:
-            if self.vx > 0:
+            if self.rect.centerx < hit.rect.centerx:
                 self.rect.right = hit.rect.left
-            elif self.vx < 0:
+            elif self.rect.centerx > hit.rect.centerx:
                 self.rect.left = hit.rect.right
 
         self.rect.y += self.vy
